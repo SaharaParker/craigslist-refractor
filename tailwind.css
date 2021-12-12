@@ -422,9 +422,3 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
-
-@layer base {
-  ul, ol {
-    list-style-type: none;
-  }
-}
