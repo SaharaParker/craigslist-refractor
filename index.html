@@ -7,7 +7,7 @@
 </head>
 <body class="bg-gray-100 md:block">
 <!--desktop-->
-    <nav class=" hidden md:block">
+    <nav class="flex hidden md:block">
         <!--desktop-top-nav-->
         <div class="flex w-1/3 container align-baseline border-t-2 border-b-2 border-gray-300 bg-gray-200 mx-auto mt-6 font-serif">
             <div id="top-nav">
@@ -21,7 +21,9 @@
                 </ul>
             </div>
         </div>
-        <!--left-->
+    </nav>
+<!--left-->
+    <nav>
         <div id="left" class="p-4 float-left border-r-2 border-l-2 w-1/8 border-gray-300 text-blue-800 bg-gray-200">
             <h1 class="text-2xl">craigslist</h1>
             <h3 class="bg-yellow-50">create a posting</h3>
@@ -30,12 +32,35 @@
             <div id="event calendar" class="relative">
                 <label for="event calendar">event calendar</label><br>
                 <input type="date">
-            </div><br>
-            <div></div>
+            </div>
+            <br>
+    </nav>
+        <!--right nav-->
+
+            <nav aria-label="right-nav">
+                <div class="p-4 float-right border-r-2 border-l-2 w-1/8 border-gray-300 text-blue-800 bg-gray-200">
+                   <select name="lang" id="lang-sel" class="border border-2">
+                       <option value=""></option>
+                       <option value=""></option>
+                       <option value=""></option>
+                       <option value=""></option>
+                       <option value=""></option></select>
+                    <ul>
+                        <li>nearby cl</li>
+                        <li>us cities</li>
+                        <li>us states</li>
+                        <li>canada</li>
+                        <li>cl world wide</li>
+                    </ul>
+                </div>
+            </nav>
+           
+
+
             <div></div>
 
         </div>
-    </nav>
+
 
 <!--mobile-->
         <div class="md:hidden">
