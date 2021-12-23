@@ -28,19 +28,24 @@
                 <h1 class="text-2xl text-gray-200">craigslist</h1>
                 <h3 class="bg-yellow-50 text-purple-500">create a posting</h3>
                 <h3>my account</h3>
-                <input type="search" placeholder="search craigslist" class="border border-2 border-purple-700 text-purple-500">
+                <label>
+                    <input type="search" placeholder="search craigslist" class="border border-2 border-purple-700 text-purple-500">
+                </label>
                 <div id="event calendar" class="relative text-purple-500">
-                    <label for="event calendar">event calendar</label><br>
-                    <input type="date">
+                    <label for="event calendar">event calendar
+                        <input type="date">
+                    </label><br>
                     <h3 class="text-gray-200">craigslist app</h3>
-                    <select name="info" id="more-info" class="border border-3 bg-gray-50 border-purple-700 text-purple-500">
-                        <option value="" class="text-purple-500">help,faq,abuse,legal</option>
-                        <option value="">avoid scams & fraud</option>
-                        <option value="">personal safety tips</option>
-                        <option value="">terms of use</option>
-                        <option value="">privacy policy</option>
-                        <option value="">system status</option>
-                    </select>
+                    <label>
+                        <select name="info" id="more-info" class="border border-3 bg-gray-50 border-purple-700 text-purple-500">
+                            <option value="" class="text-purple-500">help,faq,abuse,legal</option>
+                            <option value="">avoid scams & fraud</option>
+                            <option value="">personal safety tips</option>
+                            <option value="">terms of use</option>
+                            <option value="">privacy policy</option>
+                            <option value="">system status</option>
+                        </select>
+                    </label>
                     <h3 class="text-purple-900 font-semibold">about craigslist</h3>
                     <h3 class="text-purple-900 font-semibold">craigslist is hiring in sf</h3>
                     <h3 class="text-purple-900 font-semibold">craigslist open source</h3>
@@ -55,7 +60,7 @@
         <!--middle/main nav-->
         <nav class="hidden md:block">
             <div class="flex">
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border border-2">
+                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">community</a>
                 </h3>
                 <ul class="float-left mr-1">
@@ -82,14 +87,14 @@
             </div>
             
             <div>
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border border-2"><a href="#">housing</a>
+                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2"><a href="#">housing</a>
                 </h3>
                 <ul></ul>
                 <ul></ul>
             </div>
 
             <div>
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border border-2">
+                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">jobs</a>
                 </h3>
                 <ul></ul>
@@ -97,7 +102,7 @@
             </div>
 
             <div>
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border border-2">
+                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">services</a>
                 </h3>
                 <ul></ul>
@@ -105,7 +110,7 @@
             </div>
 
             <div>
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border border-2">
+                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">for sale</a>
                 </h3>
                 <ul></ul>
@@ -113,7 +118,7 @@
             </div>
 
             <div>
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border border-2">
+                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">discussion forms</a>
                 </h3>
                 <ul></ul>
@@ -122,7 +127,7 @@
             </div>
 
             <div>
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border border-2">
+                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">gigs</a>
                 </h3>
                 <ul></ul>
@@ -130,7 +135,7 @@
             </div>
 
             <div>
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border border-2">
+                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">resumes</a>
                 </h3>
             </div>
@@ -141,18 +146,20 @@
 
             <nav aria-label="right-nav" class="hidden md:block">
                 <div class="p-4 float-right border-r-2 border-l-2 w-1/8 border-purple-700 text-gray-200 bg-purple-500">
-                   <select name="lang" id="lang-sel" class="border border-3 border-purple-700 text-purple-500">
-                       <option selected value="">english</option>
-                       <option value="">espanol</option>
-                       <option value="">francois</option>
-                       <option value="">italiano</option>
-                       <option value="">suomi</option></select>
+                    <label>
+                        <select name="lang" id="lang-sel" class="border border-3 border-purple-700 text-purple-500">
+                            <option selected value="">english</option>
+                            <option value="">espanol</option>
+                            <option value="">francois</option>
+                            <option value="">italiano</option>
+                            <option value="">suomi</option>
+                        </select>
+                    </label>
                         <h5 class="border-collapse">nearby cl</h5>
                         <h5>us cities</h5>
                         <h5>us states</h5>
                         <h5>canada</h5>
                         <h5>cl world wide</h5>
-                    </ul>
                 </div>
             </nav>
 
