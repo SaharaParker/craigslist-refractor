@@ -5,11 +5,11 @@
     <title>craigslist: boston jobs, apartments, for sale, services, community, and events</title>
     <link rel="stylesheet" href="dist/output.css">
 </head>
-<body class="bg-gray-100 md:block">
+<body class="container bg-gray-100 md:block">
 <!--desktop-->
     <nav class="hidden md:block">
         <!--desktop-top-nav-->
-        <div class="flex w-1/3 container align-baseline border-t-2 border-b-2 border-purple-700 bg-purple-500 mx-auto mt-6 font-serif">
+        <div class="w-1/3 container align-baseline border-t-2 border-b-2 border-purple-700 bg-purple-500 mx-auto mt-6 font-serif">
             <div id="top-nav">
                 <h1 class="flex text-gray-200 text-2xl">boston</h1>
                 <ul class="flex justify-items-center space-x-4 m-4 font-mono text-purple-500">
@@ -24,7 +24,7 @@
     </nav>
 <!--left-->
         <nav class="hidden md:block">
-            <div id="left" class="p-4 float-left border-r-2 border-l-2 w-1/8 border-purple-700 text-gray-200 bg-purple-500 min-h-max">
+            <div id="left" class="p-4 float-left border-r-2 border-l-2 w-1/8 border-purple-700 text-gray-200 bg-purple-500">
                 <h1 class="text-2xl text-gray-200">craigslist</h1>
                 <h3 class="bg-yellow-50 text-purple-500">create a posting</h3>
                 <h3>my account</h3>
@@ -58,8 +58,8 @@
         </nav>
 
         <!--middle/main nav-->
-        <nav class="hidden md:block">
-            <div class="flex">
+        <nav class="justify-items-center hidden md:block">
+            <div class="inline-block">
                 <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">community</a>
                 </h3>
@@ -74,7 +74,7 @@
                     <li>local news</li>
                 </ul>
 
-                <ul class="float-right">
+                <ul>
                     <li>lost+found</li>
                     <li>missed connections</li>
                     <li>musicians</li>
@@ -87,10 +87,11 @@
                 </ul>
             </div>
             
-            <div>
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2"><a href="#">housing</a>
+            <div class="inline-block">
+                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
+                    <a href="#">housing</a>
                 </h3>
-                <ul>
+                <ul class="">
                     <li>apts/housings</li>
                     <li>housing swap</li>
                     <li>housing wanted</li>
@@ -104,7 +105,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="inline-block">
                 <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">jobs</a>
                 </h3>
@@ -112,7 +113,7 @@
                 <ul></ul>
             </div>
 
-            <div>
+            <div class="inline-block">
                 <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">services</a>
                 </h3>
@@ -120,7 +121,7 @@
                 <ul></ul>
             </div>
 
-            <div>
+            <div class="inline-block">
                 <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">for sale</a>
                 </h3>
@@ -128,7 +129,7 @@
                 <ul></ul>
             </div>
 
-            <div>
+            <div class="inline-block">
                 <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">discussion forms</a>
                 </h3>
@@ -137,7 +138,7 @@
                 <ul></ul>
             </div>
 
-            <div>
+            <div class="inline-block">
                 <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">gigs</a>
                 </h3>
@@ -145,7 +146,7 @@
                 <ul></ul>
             </div>
 
-            <div>
+            <div class="inline-block">
                 <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
                     <a href="#">resumes</a>
                 </h3>
@@ -155,9 +156,9 @@
 
         <!--right nav-->
 
-            <nav aria-label="right-nav" class="hidden md:block">
-                <div class="p-4 float-right border-r-2 border-l-2 w-1/8 border-purple-700 text-gray-200 bg-purple-500">
-                    <label>
+            <nav class="hidden md:block">
+                <div id="right" class="p-4 float-right border-r-2 border-l-2 w-1/8 border-purple-700 text-gray-200 bg-purple-500">
+                    <label class="">
                         <select name="lang" id="lang-sel" class="border border-3 border-purple-700 text-purple-500">
                             <option selected value="">english</option>
                             <option value="">espanol</option>
