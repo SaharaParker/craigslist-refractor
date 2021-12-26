@@ -5,213 +5,330 @@
     <title>craigslist: boston jobs, apartments, for sale, services, community, and events</title>
     <link rel="stylesheet" href="dist/output.css">
 </head>
-<body class="container bg-gray-100 md:block">
+<body class="flex container bg-gray-100 md:block">
 <!--desktop-->
-    <nav class="hidden md:block">
-        <!--desktop-top-nav-->
-        <div class="w-1/3 container align-baseline border-t-2 border-b-2 border-purple-700 bg-purple-500 mx-auto mt-6 font-serif">
-            <div id="top-nav">
-                <h1 class="flex text-gray-200 text-2xl">boston</h1>
-                <ul class="flex justify-items-center space-x-4 m-4 font-mono text-purple-500">
-                    <li class="bg-gray-100">gbs</li>
-                    <li class="bg-gray-100">nwb</li>
-                    <li class="bg-gray-100">bmw</li>
-                    <li class="bg-gray-100">nos</li>
-                    <li class="bg-gray-100">sob</li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-<!--left-->
-        <nav class="hidden md:block">
-            <div id="left" class="p-4 float-left border-r-2 border-l-2 w-1/8 border-purple-700 text-gray-200 bg-purple-500">
-                <h1 class="text-2xl text-gray-200">craigslist</h1>
-                <h3 class="bg-yellow-50 text-purple-500">create a posting</h3>
-                <h3>my account</h3>
-                <label>
-                    <input type="search" placeholder="search craigslist" class="border border-2 border-purple-700 text-purple-500">
-                </label>
-                <div id="event calendar" class="relative text-purple-500">
-                    <label for="event calendar">event calendar
-                        <input type="date">
-                    </label><br>
-                    <h3 class="text-gray-200">craigslist app</h3>
+        <div class="align-baseline">
+            <nav class="hidden md:block">
+                <!--desktop-top-nav-->
+                <div class="w-1/3 container align-baseline border-t-2 border-b-2 border-purple-700 bg-purple-500 mx-auto mt-6 font-serif">
+                    <div id="top-nav">
+                        <h1 class="flex text-gray-200 text-2xl">boston</h1>
+                        <ul class="flex justify-items-center space-x-4 m-4 font-mono text-purple-500">
+                            <li class="bg-gray-100">gbs</li>
+                            <li class="bg-gray-100">nwb</li>
+                            <li class="bg-gray-100">bmw</li>
+                            <li class="bg-gray-100">nos</li>
+                            <li class="bg-gray-100">sob</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--left-->
+            <nav class="hidden md:block">
+                <div id="left"
+                     class="p-4 items-center float-left border-r-2 border-l-2 max-w-full border-purple-700 text-gray-200 bg-purple-500">
+                    <h1 class="text-2xl text-gray-200">craigslist</h1>
+                    <h3 class="bg-yellow-50 text-purple-500">create a posting</h3>
+                    <h3>my account</h3>
                     <label>
-                        <select name="info" id="more-info" class="border border-3 bg-gray-50 border-purple-700 text-purple-500">
-                            <option value="" class="text-purple-500">help,faq,abuse,legal</option>
-                            <option value="">avoid scams & fraud</option>
-                            <option value="">personal safety tips</option>
-                            <option value="">terms of use</option>
-                            <option value="">privacy policy</option>
-                            <option value="">system status</option>
-                        </select>
+                        <input type="search" placeholder="search craigslist"
+                               class="border border-2 border-purple-700 text-purple-500">
                     </label>
-                    <h3 class="text-purple-900 font-semibold">about craigslist</h3>
-                    <h3 class="text-purple-900 font-semibold">craigslist is hiring in sf</h3>
-                    <h3 class="text-purple-900 font-semibold">craigslist open source</h3>
-                    <h3 class="text-purple-900 font-semibold">craigslist blog</h3>
-                    <h3 class="text-purple-900 font-semibold">best-of-craigslist</h3>
-                    <h3 class="text-purple-900 font-semibold">"craigslist joe"</h3>
-                    <h3 class="text-purple-900 font-semibold">craig newmark philanthropies</h3>
-                </div><br>
-            </div>
-        </nav>
+                    <div id="event calendar" class="relative text-purple-500">
+                        <label for="event calendar">event calendar
+                            <input type="date">
+                        </label><br>
+                        <h3 class="text-gray-200">craigslist app</h3>
+                        <label>
+                            <select name="info" id="more-info"
+                                    class="border border-3 bg-gray-50 border-purple-700 text-purple-500">
+                                <option value="" class="text-purple-500">help,faq,abuse,legal</option>
+                                <option value="">avoid scams & fraud</option>
+                                <option value="">personal safety tips</option>
+                                <option value="">terms of use</option>
+                                <option value="">privacy policy</option>
+                                <option value="">system status</option>
+                            </select>
+                        </label>
+                        <h3 class="text-purple-900 font-semibold">about craigslist</h3>
+                        <h3 class="text-purple-900 font-semibold">craigslist is hiring in sf</h3>
+                        <h3 class="text-purple-900 font-semibold">craigslist open source</h3>
+                        <h3 class="text-purple-900 font-semibold">craigslist blog</h3>
+                        <h3 class="text-purple-900 font-semibold">best-of-craigslist</h3>
+                        <h3 class="text-purple-900 font-semibold">"craigslist joe"</h3>
+                        <h3 class="text-purple-900 font-semibold">craig newmark philanthropies</h3>
+                    </div>
+                    <br>
+                </div>
+            </nav>
 
-        <!--middle/main nav-->
-        <nav class="justify-items-center hidden md:block">
-            <div class="inline-block">
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
-                    <a href="#">community</a>
-                </h3>
-                <ul class="float-left">
-                    <li>activities</li>
-                    <li>artists</li>
-                    <li>childcare</li>
-                    <li>classes</li>
-                    <li>events</li>
-                    <li>general</li>
-                    <li>groups</li>
-                    <li>local news</li>
-                </ul>
+            <!--middle/main nav-->
+            <nav class="justify-items-center hidden md:block">
+                <div class="inline-block">
+                    <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
+                        <a href="#">community</a>
+                    </h3>
+                    <ul class="float-left">
+                        <li>activities</li>
+                        <li>artists</li>
+                        <li>childcare</li>
+                        <li>classes</li>
+                        <li>events</li>
+                        <li>general</li>
+                        <li>groups</li>
+                        <li>local news</li>
+                    </ul>
 
-                <ul>
-                    <li>lost+found</li>
-                    <li>missed connections</li>
-                    <li>musicians</li>
-                    <li>pets</li>
-                    <li>pets</li>
-                    <li>politics</li>
-                    <li>rants&raves</li>
-                    <li>rideshare</li>
-                    <li>volunteers</li>
-                </ul>
-            </div>
-            
-            <div class="inline-block">
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
-                    <a href="#">housing</a>
-                </h3>
-                <ul class="">
-                    <li>apts/housings</li>
-                    <li>housing swap</li>
-                    <li>housing wanted</li>
-                    <li>office/commercial</li>
-                    <li>parking/storage</li>
-                    <li>real estate for sale</li>
-                    <li>rooms/shared</li>
-                    <li>rooms wanted</li>
-                    <li>sublets/temporary</li>
-                    <li>vacation rentals</li>
-                </ul>
-            </div>
+                    <ul>
+                        <li>lost+found</li>
+                        <li>missed connections</li>
+                        <li>musicians</li>
+                        <li>pets</li>
+                        <li>pets</li>
+                        <li>politics</li>
+                        <li>rants&raves</li>
+                        <li>rideshare</li>
+                        <li>volunteers</li>
+                    </ul>
+                </div>
 
-            <div class="inline-block">
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
-                    <a href="#">jobs</a>
-                </h3>
-                <ul>
-                    <li>accounting+finance</li>
-                    <li>admin/office</li>
-                    <li>arch-engineering</li>
-                    <li>art/media/design</li>
-                    <li>biotech/science</li>
-                    <li>business/mgmt</li>
-                    <li>customer service</li>
-                    <li>education</li>
-                    <li>etc/misc</li>
-                    <li>food/bev/hosp</li>
-                    <li>general labor</li>
-                    <li>government</li>
-                    <li>human resources</li>
-                    <li>legal/paralegal</li>
-                    <li>manufacturing</li>
-                    <li>marketing/pr/ad</li>
-                    <li>medical/health</li>
-                    <li>nonprofit sector</li>
-                    <li>real estate</li>
-                    <li>retail/wholesale</li>
-                    <li>sales/biz dev</li>
-                    <li>salon/spa/fitness</li>
-                    <li>security</li>
-                    <li>skilled trade/craft</li>
-                    <li>software/qa/dba</li>
-                    <li>systems/network</li>
-                    <li>technical support</li>
-                    <li>transport</li>
-                    <li>tv/film/video</li>
-                    <li>web/info design</li>
-                    <li>writing/editing</li>
-                </ul>
-            </div>
+                <div class="inline-block">
+                    <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
+                        <a href="#">housing</a>
+                    </h3>
+                    <ul class="">
+                        <li>apts/housings</li>
+                        <li>housing swap</li>
+                        <li>housing wanted</li>
+                        <li>office/commercial</li>
+                        <li>parking/storage</li>
+                        <li>real estate for sale</li>
+                        <li>rooms/shared</li>
+                        <li>rooms wanted</li>
+                        <li>sublets/temporary</li>
+                        <li>vacation rentals</li>
+                    </ul>
+                </div>
 
-            <div class="inline-block">
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
-                    <a href="#">services</a>
-                </h3>
-                <ul>
-                    <li>automotive</li>
-                    <li>beauty</li>
-                    <li>cell/mobile</li>
-                    <li>computer</li>
-                    <li>creative</li>
-                    <li>cycle</li>
-                    <li>event</li>
-                    <li>farm+garden</li>
-                    <li>financial</li>
-                    <li>health/well</li>
-                    <li>household</li>
-                </ul>
-                <ul>
-                    <li>labor/move</li>
-                    <li>legal</li>
-                    <li>lessons</li>
-                    <li>marine</li>
-                    <li>pet</li>
-                    <li>real estate</li>
-                    <li>skilled trade</li>
-                    <li>sm biz ads</li>
-                    <li>travel/vac</li>
-                    <li>write/ed/tran</li>
-                </ul>
-            </div>
+                <div class="inline-block">
+                    <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
+                        <a href="#">jobs</a>
+                    </h3>
+                    <ul>
+                        <li>accounting+finance</li>
+                        <li>admin/office</li>
+                        <li>arch-engineering</li>
+                        <li>art/media/design</li>
+                        <li>biotech/science</li>
+                        <li>business/mgmt</li>
+                        <li>customer service</li>
+                        <li>education</li>
+                        <li>etc/misc</li>
+                        <li>food/bev/hosp</li>
+                        <li>general labor</li>
+                        <li>government</li>
+                        <li>human resources</li>
+                        <li>legal/paralegal</li>
+                        <li>manufacturing</li>
+                        <li>marketing/pr/ad</li>
+                        <li>medical/health</li>
+                        <li>nonprofit sector</li>
+                        <li>real estate</li>
+                        <li>retail/wholesale</li>
+                        <li>sales/biz dev</li>
+                        <li>salon/spa/fitness</li>
+                        <li>security</li>
+                        <li>skilled trade/craft</li>
+                        <li>software/qa/dba</li>
+                        <li>systems/network</li>
+                        <li>technical support</li>
+                        <li>transport</li>
+                        <li>tv/film/video</li>
+                        <li>web/info design</li>
+                        <li>writing/editing</li>
+                    </ul>
+                </div>
 
-            <div class="inline-block">
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
-                    <a href="#">for sale</a>
-                </h3>
-                <ul></ul>
-                <ul></ul>
-            </div>
+                <div class="inline-block">
+                    <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
+                        <a href="#">services</a>
+                    </h3>
+                    <ul>
+                        <li>automotive</li>
+                        <li>beauty</li>
+                        <li>cell/mobile</li>
+                        <li>computer</li>
+                        <li>creative</li>
+                        <li>cycle</li>
+                        <li>event</li>
+                        <li>farm+garden</li>
+                        <li>financial</li>
+                        <li>health/well</li>
+                        <li>household</li>
+                    </ul>
+                    <ul>
+                        <li>labor/move</li>
+                        <li>legal</li>
+                        <li>lessons</li>
+                        <li>marine</li>
+                        <li>pet</li>
+                        <li>real estate</li>
+                        <li>skilled trade</li>
+                        <li>sm biz ads</li>
+                        <li>travel/vac</li>
+                        <li>write/ed/tran</li>
+                    </ul>
+                </div>
 
-            <div class="inline-block">
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
-                    <a href="#">discussion forms</a>
-                </h3>
-                <ul></ul>
-                <ul></ul>
-                <ul></ul>
-            </div>
+                <div class="inline-block">
+                    <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
+                        <a href="#">for sale</a>
+                    </h3>
+                    <ul>
+                        <li>antiques</li>
+                        <li>appliances</li>
+                        <li>arts+crafts</li>
+                        <li>atv/utv/sno</li>
+                        <li>auto parts</li>
+                        <li>aviation</li>
+                        <li>baby+kid</li>
+                        <li>barter</li>
+                        <li>beauty+hlth</li>
+                        <li>bike parts</li>
+                        <li>bikes</li>
+                        <li>boat parts</li>
+                        <li>boats</li>
+                        <li>books</li>
+                        <li>business</li>
+                        <li>cars+trucks</li>
+                        <li>cds/dvd/vhs</li>
+                        <li>cell phones</li>
+                        <li>clothes+acc</li>
+                        <li>collectibles</li>
+                        <li>computer parts</li>
+                        <li>computers</li>
+                        <li>electronics</li>
+                    </ul>
+                    <ul>
+                        <li>farm+garden</li>
+                        <li>free</li>
+                        <li>furniture</li>
+                        <li>garage sale</li>
+                        <li>general</li>
+                        <li>heavy equip</li>
+                        <li>household</li>
+                        <li>jewelry</li>
+                        <li>materials</li>
+                        <li>motorcycle parts</li>
+                        <li>motorcycles</li>
+                        <li>music instr</li>
+                        <li>photo+video</li>
+                        <li>rvs+camp</li>
+                        <li>sporting</li>
+                        <li>tickets</li>
+                        <li>tools</li>
+                        <li>toys+games</li>
+                        <li>trailers</li>
+                        <li>video gaming</li>
+                        <li>wanted</li>
+                        <li>wheels+tires</li>
+                    </ul>
+                </div>
 
-            <div class="inline-block">
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
-                    <a href="#">gigs</a>
-                </h3>
-                <ul></ul>
-                <ul></ul>
-            </div>
+                <div class="inline-block">
+                    <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
+                        <a href="#">discussion forms</a>
+                    </h3>
+                    <ul>
+                        <li>apple</li>
+                        <li>arts</li>
+                        <li>atheist</li>
+                        <li>auto</li>
+                        <li>beauty</li>
+                        <li>bikes</li>
+                        <li>celebs</li>
+                        <li>comp</li>
+                        <li>cosmos</li>
+                        <li>diet</li>
+                        <li>divorce</li>
+                        <li>dying</li>
+                        <li>eco</li>
+                        <li>feedbk</li>
+                        <li>film</li>
+                        <li>fixit</li>
+                        <li>food</li>
+                    </ul>
+                    <ul>
+                        <li>frugal</li>
+                        <li>gaming</li>
+                        <li>garden</li>
+                        <li>haiku</li>
+                        <li>help</li>
+                        <li>history</li>
+                        <li>housing</li>
+                        <li>jobs</li>
+                        <li>jokes</li>
+                        <li>legal</li>
+                        <li>manners</li>
+                        <li>marriage</li>
+                        <li>money</li>
+                        <li>music</li>
+                        <li>open</li>
+                        <li>parent</li>
+                        <li>pets</li>
+                    </ul>
+                    <ul>
+                        <li>philos</li>
+                        <li>photo</li>
+                        <li>politics</li>
+                        <li>psych</li>
+                        <li>recover</li>
+                        <li>religion</li>
+                        <li>rofo</li>
+                        <li>science</li>
+                        <li>spirit</li>
+                        <li>sports</li>
+                        <li>super</li>
+                        <li>tax</li>
+                        <li>travel</li>
+                        <li>tv</li>
+                        <li>vegan</li>
+                        <li>words</li>
+                        <li>writing</li>
+                    </ul>
+                </div>
 
-            <div class="inline-block">
-                <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
-                    <a href="#">resumes</a>
-                </h3>
-            </div>
-        </nav>
+                <div class="inline-block">
+                    <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
+                        <a href="#">gigs</a>
+                    </h3>
+                    <ul>
+                        <li>computer</li>
+                        <li>creative</li>
+                        <li>crew</li>
+                        <li>domestic</li>
+                    </ul>
+                    <ul>
+                        <li>event</li>
+                        <li>labor</li>
+                        <li>talent</li>
+                        <li>writing</li>
+                    </ul>
+                </div>
+
+                <div class="inline-block">
+                    <h3 class="text-lg text-gray-200 font-semibold bg-purple-500 border-purple-700 border-t-2 border-b-2">
+                        <a href="#">resumes</a>
+                    </h3>
+                </div>
+            </nav>
 
 
-        <!--right nav-->
+            <!--right nav-->
 
             <nav class="hidden md:block">
-                <div id="right" class="p-4 float-right border-r-2 border-l-2 w-1/8 border-purple-700 text-gray-200 bg-purple-500">
+                <div id="right"
+                     class="p-4 float-right border-r-2 border-l-2 w-1/8 border-purple-700 text-gray-200 bg-purple-500">
                     <label class="">
                         <select name="lang" id="lang-sel" class="border border-3 border-purple-700 text-purple-500">
                             <option selected value="">english</option>
@@ -221,13 +338,15 @@
                             <option value="">suomi</option>
                         </select>
                     </label>
-                        <h5 class="border-collapse">nearby cl</h5>
-                        <h5>us cities</h5>
-                        <h5>us states</h5>
-                        <h5>canada</h5>
-                        <h5>cl world wide</h5>
+
+                    <h5 class="border-collapse">nearby cl</h5>
+                    <h5>us cities</h5>
+                    <h5>us states</h5>
+                    <h5>canada</h5>
+                    <h5>cl world wide</h5>
                 </div>
             </nav>
+        </div>
 
 
 <!--mobile-->
